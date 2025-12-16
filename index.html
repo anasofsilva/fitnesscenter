@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Center</title>
+    <!-- Include a CSS stylesheet from Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Include my CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Font Awesome library to use icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- This script includes a minimized version of jQuery (version 3.3.1) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- This script adds Popper.js for positioning tooltips, popovers, and dropdowns -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!-- This script should link to the JavaScript functionality of Bootstrap (version 4.1.3) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Navbar with Bootstrap classes -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <!-- LOGO
+        <a class="navbar-brand" href="#page-top">
+            <img src="logo.jpeg" width="70" height="70">
+        </a> -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <!-- Itens de navegação -->
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aulas">Aulas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactos">Contactos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <!-- Carrossel Bootstrap -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-position-fix" data-ride="carousel">
+            <!-- Indicadores (os pontos para navegar no carrossel) -->
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Imagens do slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="slideshow1.jpeg" alt="Primeira Imagem">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="slideshow2.jpeg" alt="Segunda Imagem">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="slideshow3.jpeg" alt="Terceira Imagem">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="slideshow4.jpeg" alt="Quarta Imagem">
+                </div>
+            </div>
+
+            <!-- Controlo de navegação anterior e seguinte -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Seguinte</span>
+            </a>
+        </div>
+
+        <!-- Texto do cabeçalho -->
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading text-uppercase" style="line-height: 1; color: beige; ">U.N.F.C.<br>Fitness Center</div>
+                <div class="intro-lead-in">Ajudamos-te a atingir os teus objectivos, vem-nos conhecer!</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#" id="btnRegister">Inscreve-te já</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ######################### 'SOBRE' SECTION ########################## -->
+    <section id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <img src="logo_semletras.jpeg" alt="Logótipo do Clube" style="width: 50px; margin-bottom: 5px;">
+                    <h2 class="section-heading text-uppercase">Sobre nós</h2>
+                    <h3 class="section-subheading">
+                        Descobre uma abordagem inovadora para a forma física, focada em movimentos naturais e funcionais que melhoram a tua força, flexibilidade e resistência. Junta-te a nós para uma jornada de transformação pessoal e alcança os teus objetivos de saúde e bem-estar. És bem-vindo ao nosso estúdio, onde cada treino é uma oportunidade para te superares. Torna-te na tua melhor versão!
+                    </h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x" style="color:rgb(35, 21, 116);"></i>
+                        <i class="fas fa-users fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="topic-heading">Aulas de grupo</h4>
+                    <p class="text-muted">
+                        Seja para melhorar a sua condição física, ganhar força ou relaxar, temos a aula certa para si, sempre com a orientação de professores qualificados.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x" style="color: rgb(35, 21, 116);"></i>
+                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="topic-heading">Treino personalizado</h4>
+                    <p class="text-muted">
+                        Trabalhe diretamente com um professor especializado que irá criar um treino específico para os seus objetivos e necessidades.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ###################### 'Aulas' SECTION ####################### -->
+    <section class="bg-light" id="classes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Aulas de grupo</h2>
+                    <h3 class="section-subheading text-muted">Vem experimentar as nossas aulas de grupo.</h3>
+                </div>
+            </div>
+            <div class="row" id="renderSpeakers"></div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">Profissionais de excelência para te acompanhar na jornada da saúde e bem-estar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ###################### 'Professores' SECTION ####################### -->
+<section class="bg-light" id="coaches">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Professores</h2>
+                <h3 class="section-subheading text-muted">Vem conhecer os nossos professores.</h3>
+            </div>
+        </div>
+        <div class="row" id="renderSpeakers"></div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="large text-muted">Profissionais de excelência para te acompanhar na jornada da saúde e bem-estar.</p>
+            </div>
+        </div>
+    </div>
+</section>    
+
+<!-- ####################### CONTACTOS ######################### -->
+ <section id="contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Contactos</h2>
+          <h3 class="section-subheading text-muted">Deixe-nos a sua suesgtão/dúvida e nós rapidamente entraremos em contacto consigo!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" name="sentMessage">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" id="name" type="text" placeholder="o seu nome" required>                    
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="email" type="email" placeholder="o seu email" required>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="phone" type="tel" placeholder="o seu nº de telemóvel">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" id="message" placeholder="a sua mensagem" required></textarea>
+                </div>
+              </div>
+              
+              <div class="col-lg-12 text-center">                  
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar mensagem</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>      
+    </div>
+    <br><br>
+    <div class="container-fluid" id="googleMap">
+      <div class="row">
+      </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="">    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <span class="copyright">Copyright &copy; WebConference 2018</span>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline social-buttons">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+</footer> 
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="js/fitcenter.js"></script>
+
+<script>
+    $('.carousel').carousel({
+        interval: 3000  // Tempo de transição entre as imagens (3 segundos)
+    });
+</script>
+
+</body>
+</html>

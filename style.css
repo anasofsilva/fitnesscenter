@@ -1,0 +1,119 @@
+header.masthead {
+    position: relative; /* So the overlay is positioned correctly */
+    text-align: center;
+    z-index: 1; /* Ensure content is above the overlay */
+}
+
+header.masthead .carousel-item {
+    height: 80vh; /* Define a altura do carrossel para ocupar toda a viewport */
+}
+
+header.masthead .carousel-item img {
+    object-fit: cover; /* Cobre toda a área do carrossel */
+    height: 100%;
+}
+
+.carousel-position-fix {
+    
+    width: 100vw; /* O carrossel vai ocupar 100% da largura da janela */
+    max-width: 100vw; /* Garante que o carrossel não ultrapassa a largura da janela */
+    
+}
+
+.carousel-item img {
+    object-fit: cover; /* As imagens vão cobrir toda a largura e altura sem distorção */
+    width: 100%; /* As imagens ocupam 100% da largura do slide */
+    height: auto; /* A altura é ajustada automaticamente */
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff; /* Garante que o texto se destaca nas imagens */
+}
+
+header.masthead::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 50% opacity */
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+header.masthead .intro-text .intro-lead-in {
+    font-size: 22px;
+    font-style: italic;   
+    line-height: 22px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif', 'Helvetic Neue', Helvetica, sans-serif;
+    color: white;
+    
+}
+
+header.masthead .intro-text .intro-heading {
+    font-size: 80px;
+    font-weight: 700;   
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', 'Helvetic Neue', Helvetica, sans-serif;
+    color: white;
+}
+
+
+.btn {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.btn-x1 {
+    font-size:20px;
+    padding: 15px 50px;
+}
+
+.btn-primary {
+    background-color:  rgb(35, 21, 116);
+    border-color:  rgb(35, 21, 116);
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover{
+    background-color: rgb(57, 47, 117);
+    border-color:  rgb(57, 47, 117);
+    color: white;
+}
+
+.navbar-brand {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+section{
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+section h3.section-subheading{
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: 'Montserrat', 'Helvetic Neue', Helvetica, sans-serif;
+}
+
